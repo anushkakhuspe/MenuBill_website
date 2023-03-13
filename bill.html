@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--Create a menu of any kind and generate a bill-->
+<html lang="en">
+
+<head>
+    <!--Bootstrap CSS link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment1_Menu Bill</title>
+    <script src="bill.js" defer></script>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<!--Background image-->
+
+<body background="Image\Img.jpg">
+    <div class="main">
+        <div class="div1">
+            <!--Table to display menu items-->
+            <table>
+                <tr>
+                    <td colspan="2"><u><i>Menu: </i></u></td>
+                </tr>
+                <tr>
+                    <td>Pani Puri - </td>
+                    <td> Rs. 20</td>
+                </tr>
+                <tr>
+                    <td>Vegetable Samosa - </td>
+                    <td> Rs. 60</td>
+                </tr>
+                <tr>
+                    <td>Grilled Sandwich - </td>
+                    <td> Rs. 80</td>
+                </tr>
+                <tr>
+                    <td>Veg Manchurian - </td>
+                    <td> Rs. 90</td>
+                </tr>
+                <tr>
+                    <td>Corn cheese ball price - </td>
+                    <td> Rs. 100</td>
+                </tr>
+                <tr>
+                    <td>Paneer chilly price - </td>
+                    <td> Rs. 120</td>
+                </tr>
+
+            </table>
+        </div>
+
+        <div class="div2" style="float: right;"><br>
+            <p style="color: darkmagenta;"><i>Select an Indian snack from the given menu: <br>(Select different item
+                    each time)</i></p>
+
+            <!--Select tag for selecting an option-->
+            <select id="s1" style="border: solid; color:darkgreen;">
+                <option>Select</option>
+            </select>
+            <br><br>
+
+            <!--Input type number to enter the quantity-->
+            Enter Quantity: <br>
+            <input type="text" id="n1" style="border-radius: 5px;" />
+            <br><br>
+
+            <!--Button for function calc();-->
+            <button type="button" id="b1" style="width: 100px; border: seagreen;" class="btn btn-success"
+                value="calculate" onclick="calc();">Calculate</button>
+            <br><br>
+
+
+            <!--Display output-->
+            <p id="answer" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight: 100;"></p>
+            <p id="display" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight: 100;"></p>
+        </div>
+    </div>
+
+    <!--Bootstrap link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
